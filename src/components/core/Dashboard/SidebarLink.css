@@ -1,0 +1,74 @@
+/* Base styles for the sidebar link */
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+  }
+  
+  /* Active link styles */
+  .sidebar-link.active {
+    background-color: #007bff; /* Highlighted background for active link */
+    color: #fff; /* White text for active link */
+  }
+  
+  /* Highlight effect */
+  .sidebar-highlight {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px; /* Width of the highlight */
+    background-color: #007bff; /* Highlight color */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-highlight.visible {
+    transform: translateX(0); /* Move the highlight into view */
+  }
+  
+  /* Link content styles */
+  .link-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon styles */
+  .link-icon {
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sidebar-link {
+      padding: 8px 12px; /* Smaller padding for mobile */
+    }
+  
+    .link-icon {
+      font-size: 1rem; /* Smaller icon size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar-link {
+      padding: 6px 10px; /* Further reduced padding for smaller screens */
+    }
+  
+    .link-content {
+      flex-direction: column; /* Stack icon and text */
+      align-items: flex-start; /* Align text to start */
+    }
+  
+    .link-icon {
+      margin-bottom: 4px; /* Space between icon and text */
+    }
+  }
+  

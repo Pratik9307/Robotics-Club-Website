@@ -1,0 +1,109 @@
+/* Main container */
+.requirements-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .field-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .required {
+    color: #e53e3e;
+  }
+  
+  /* Input container styling */
+  .input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-field {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .add-btn {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Requirements list styling */
+  .requirements-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .requirement-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6347;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #e53e3e;
+    font-size: 12px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .add-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .field-label {
+      font-size: 12px;
+    }
+  
+    .input-field {
+      font-size: 12px;
+    }
+  
+    .add-btn {
+      font-size: 12px;
+    }
+  
+    .requirement-item {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.loading-container {
+    display: grid;
+    min-height: calc(100vh - 3.5rem); /* Adjust for header height */
+    place-items: center; /* Center the spinner */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #ffffff; /* Spinner color */
+    border-radius: 50%;
+    width: 40px; /* Spinner size */
+    height: 40px; /* Spinner size */
+    animation: spin 1s linear infinite; /* Spin animation */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .dashboard-container {
+    display: flex;
+    min-height: calc(100vh - 3.5rem); /* Adjust for header height */
+    position: relative; /* For absolute positioning of children if needed */
+  }
+  
+  .content-area {
+    flex: 1; /* Take remaining space */
+    height: calc(100vh - 3.5rem); /* Adjust for header height */
+    overflow: auto; /* Allow scrolling */
+    background-color: #f4f4f9; /* Light background color for contrast */
+  }
+  
+  .content-wrapper {
+    margin: 0 auto; /* Center content */
+    width: 90%; /* Responsive width */
+    max-width: 1000px; /* Max width for larger screens */
+    padding: 20px; /* Padding for content area */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      width: 95%; /* Adjust width for smaller screens */
+      padding: 15px; /* Adjust padding */
+    }
+  }
+  

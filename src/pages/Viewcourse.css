@@ -1,0 +1,30 @@
+/* Main container for the ViewCourse component */
+.view-course-container {
+    position: relative;
+    display: flex;
+    min-height: calc(100vh - 3.5rem); /* Adjusts height based on the navbar height */
+  }
+  
+  /* Sidebar for video details */
+  .course-sidebar {
+    /* Add specific styles for the sidebar here */
+  }
+  
+  /* Main content area */
+  .course-content {
+    height: calc(100vh - 3.5rem); /* Same height adjustment for the content area */
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  /* Wrapper for the outlet to maintain margin/padding */
+  .course-outlet {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  
+  /* Modal styling if needed */
+  .course-review-modal {
+    /* Add modal-specific styles here */
+  }
+  

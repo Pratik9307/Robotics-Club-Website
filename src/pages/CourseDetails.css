@@ -1,0 +1,149 @@
+.loading-container {
+    display: grid;
+    min-height: calc(100vh - 3.5rem); /* Adjust for header height */
+    place-items: center;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .course-details-container {
+    background-color: #1f1f1f; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Overall padding */
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .thumbnail-container {
+    position: relative;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .details {
+    padding: 20px;
+  }
+  
+  .course-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .course-description {
+    color: #ccc;
+  }
+  
+  .course-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .rating {
+    color: #ffcc00; /* Yellow color for rating */
+  }
+  
+  .instructor-info {
+    margin-top: 10px;
+  }
+  
+  .additional-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .buy-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+  
+  .yellow-button, .black-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .yellow-button {
+    background-color: #ffcc00; /* Yellow button */
+    color: #1f1f1f; /* Dark text */
+  }
+  
+  .black-button {
+    background-color: #333; /* Black button */
+    color: #fff; /* White text */
+  }
+  
+  .sidebar {
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .what-you-will-learn, .course-content-section, .author-details {
+    margin-top: 40px; /* Space between sections */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .markdown-content {
+    background-color: #282828; /* Background for markdown content */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .accordion-container {
+    margin-top: 20px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-bio {
+    margin-top: 10px;
+  }
+  

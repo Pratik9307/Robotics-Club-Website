@@ -1,0 +1,139 @@
+/* Container for the courses in the cart */
+.cart-courses-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Each individual course item */
+  .course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  /* Adds border and padding to the course items */
+  .course-item-border {
+    border-bottom: 1px solid #404040; /* Matches the color in the original */
+    padding-bottom: 24px;
+  }
+  
+  .course-item-spacing {
+    margin-top: 24px;
+  }
+  
+  /* Course details section, aligns thumbnail and course info */
+  .course-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  @media (min-width: 1200px) {
+    .course-details {
+      flex-direction: row;
+    }
+  }
+  
+  /* Course thumbnail image */
+  .course-thumbnail {
+    width: 220px;
+    height: 148px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Course information styles */
+  .course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .course-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #0d0d0d;
+  }
+  
+  .course-category {
+    font-size: 0.875rem;
+    color: #808080; /* Lighter gray similar to richblack-300 */
+  }
+  
+  /* Rating and reviews */
+  .course-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .rating-value {
+    color: #ffd700; /* Gold color */
+    font-size: 1rem;
+  }
+  
+  .rating-count {
+    color: #404040;
+  }
+  
+  /* Course action buttons and price */
+  .course-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+  
+  .remove-course-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #404040;
+    background-color: #303030;
+    padding: 12px;
+    border-radius: 4px;
+    color: #f08080;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  
+  .remove-course-btn:hover {
+    background-color: #404040;
+  }
+  
+  /* Course price styles */
+  .course-price {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #ffd700;
+  }
+  
+  /* Responsive styles for smaller devices */
+  @media (max-width: 768px) {
+    .course-name {
+      font-size: 1rem;
+    }
+  
+    .course-price {
+      font-size: 1.5rem;
+    }
+  
+    .remove-course-btn {
+      padding: 8px;
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-thumbnail {
+      width: 180px;
+      height: 120px;
+    }
+  
+    .course-price {
+      font-size: 1.25rem;
+    }
+  }
+  

@@ -1,0 +1,160 @@
+/* Template.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #f4f5f7;
+  color: #333;
+}
+/* Template.css */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.template-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.template-left, .template-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.template-right {
+  position: relative;
+  padding: 2rem;
+}
+
+.template-student-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.template-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.template-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #ccc;
+  flex: 1;
+}
+
+.divider-text {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.google-button:hover {
+  background-color: #f4f4f4;
+}
+
+.google-button p {
+  margin-left: 10px;
+  color:black;
+}
+/* Template.css */
+@media (max-width: 1024px) {
+  .template-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .template-left {
+    order: 2;
+  }
+
+  .template-right {
+    order: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .template-title {
+    font-size: 2rem;
+  }
+
+  .template-description {
+    font-size: 1rem;
+  }
+
+  .google-button {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .template-title {
+    font-size: 1.75rem;
+  }
+
+  .template-description {
+    font-size: 0.9rem;
+  }
+
+  .divider-text {
+    font-size: 0.8rem;
+  }
+
+  .google-button p {
+    font-size: 0.9rem;
+  }
+}

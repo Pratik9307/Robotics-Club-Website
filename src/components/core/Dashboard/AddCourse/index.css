@@ -1,0 +1,86 @@
+/* Main Course Container */
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #e5e5e5;
+  }
+  
+  .steps-wrapper {
+    flex-grow: 1;
+  }
+  
+  /* Course Tips */
+  .course-tips {
+    position: sticky;
+    top: 20px;
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+  }
+  
+  .tips-title {
+    font-size: 1.25rem;
+    color: #e5e5e5;
+    margin-bottom: 20px;
+  }
+  
+  .tips-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.875rem;
+    color: #e5e5e5;
+    line-height: 1.5;
+  }
+  
+  .tips-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1200px) {
+    .course-container {
+      flex-direction: column;
+    }
+  
+    .course-tips {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .heading {
+      font-size: 1.75rem;
+    }
+  
+    .tips-list {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .tips-list {
+      font-size: 0.75rem;
+    }
+  }
+  

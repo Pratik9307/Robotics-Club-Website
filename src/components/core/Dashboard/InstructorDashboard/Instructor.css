@@ -1,0 +1,140 @@
+.instructor-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .greeting-section {
+    margin-bottom: 20px;
+  }
+  
+  .greeting-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .greeting-subtitle {
+    font-size: 1.2rem;
+    color: #a9a9a9;
+  }
+  
+  .chart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .no-data, .statistics-section {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  .no-data-title, .statistics-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .no-data-subtitle {
+    font-size: 1.2rem;
+    color: #a9a9a9;
+  }
+  
+  .statistics-content div {
+    margin-top: 10px;
+  }
+  
+  .statistics-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .courses-section {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  .courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view-all-link {
+    font-size: 0.9rem;
+    color: #ffb800;
+  }
+  
+  .courses-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .course-card {
+    width: 30%;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .course-details {
+    margin-top: 10px;
+  }
+  
+  .course-name {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .course-info {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #a9a9a9;
+  }
+  
+  .no-courses {
+    padding: 40px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  .no-courses-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .create-course-link {
+    font-size: 1.2rem;
+    color: #ffb800;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .chart-section {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .courses-list {
+      flex-direction: column;
+    }
+  
+    .course-card {
+      width: 100%;
+    }
+  }
+  
