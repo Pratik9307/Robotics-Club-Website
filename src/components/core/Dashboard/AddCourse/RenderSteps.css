@@ -1,0 +1,116 @@
+/* Steps Container Styling */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-button {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    background-color: #333;
+    color: #777;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .step-button.active {
+    background-color: #ffbf00;
+    color: white;
+  }
+  
+  .step-button.completed {
+    background-color: #ffbf00;
+    color: #333;
+  }
+  
+  .check-icon {
+    color: #333;
+  }
+  
+  /* Step Line Styling */
+  .step-line {
+    width: 33%;
+    height: 2px;
+    border-bottom: 2px dashed #444;
+    margin-top: 16px;
+  }
+  
+  .step-line.filled {
+    border-color: #ffbf00;
+  }
+  
+  /* Step Titles */
+  .step-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .step-title-item {
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .step-title {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .step-title.active {
+    color: white;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-line {
+      width: 50%;
+      margin: 10px 0;
+    }
+  
+    .step-titles {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-title-item {
+      min-width: auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .step-button {
+      width: 28px;
+      height: 28px;
+      font-size: 12px;
+    }
+  
+    .step-line {
+      width: 60%;
+    }
+  
+    .step-title {
+      font-size: 12px;
+    }
+  }
+  

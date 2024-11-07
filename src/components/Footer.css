@@ -1,0 +1,166 @@
+/* General footer styles */
+.footer {
+  background-color: #343a40; /* Dark background color */
+  color: #f8f9fa; /* Light text color for contrast */
+  padding: 40px 20px; /* Increased padding for a better look */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; /* Add spacing between sections */
+}
+
+/* Logo section */
+.footer-logo-section {
+  flex: 1;
+  min-width: 300px; /* Ensure enough space for content */
+}
+
+.footer-logo {
+  max-width: 200px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.footer-logo-section h1 {
+  margin: 0 0 15px 0;
+  font-size: 2em; /* Larger font size for the college name */
+}
+
+.footer-logo-section p {
+  line-height: 1.6;
+}
+
+/* Contact section */
+.footer-contact-section {
+  flex: 1;
+  min-width: 250px; /* Ensure enough space for content */
+}
+
+.footer-contact-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.footer-contact-section p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+.footer-contact-section a {
+  color: #007bff; /* Bright color for email link */
+  text-decoration: none;
+}
+
+/* Quick Links section */
+.footer-links-section {
+  flex: 1;
+  min-width: 250px; /* Ensure enough space for content */
+}
+
+.footer-links-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.footer-links-section ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.footer-links-section li {
+  margin-bottom: 10px; /* Space between links */
+}
+
+.footer-links-section a {
+  color: #007bff; /* Bright color for links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-links-section a:hover {
+  color: #0056b3; /* Darker color on hover */
+  text-decoration: underline;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px; /* Margin for spacing */
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Media queries for responsive design */
+
+/* Tablets and smaller devices */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .footer h1 {
+    font-size: 1.8em;
+  }
+
+  .footer h2 {
+    font-size: 1.4em;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-logo {
+    max-width: 120px;
+  }
+
+  .footer h1 {
+    font-size: 1.5em;
+  }
+
+  .footer h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra-small devices (phones) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 100px;
+  }
+
+  .footer h1 {
+    font-size: 1.2em;
+  }
+
+  .footer h2 {
+    font-size: 1em;
+  }
+
+  .footer p {
+    font-size: 0.8em;
+  }
+
+  .footer-bottom {
+    font-size: 0.7em;
+  }
+}

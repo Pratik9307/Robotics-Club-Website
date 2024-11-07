@@ -1,0 +1,93 @@
+/* SignupForm.css */
+.signup-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  
+  .input-label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input-field {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .password-label {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjust size */
+    color: #999; /* Initial color */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transitions */
+  }
+  
+  /* Hover Effect */
+  .toggle-password:hover {
+    color: #0073e6; /* Color changes on hover */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+  }
+  
+  /* Active/Clicked State */
+  .toggle-password:active {
+    color: #005bb5;
+    transform: scale(0.95); /* Slightly shrink when clicked */
+  }
+  
+  
+  .submit-button {
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  sup {
+    color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .input-row {
+      flex-direction: column;
+    }
+  
+    .signup-container {
+      padding: 1.5rem;
+    }
+  }
+  

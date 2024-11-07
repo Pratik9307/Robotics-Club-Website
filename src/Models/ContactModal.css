@@ -1,0 +1,187 @@
+/* ContactModal.css */
+.contact-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.contact-modal-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 600px;
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh; /* Prevents modal from being too tall */
+  overflow-y: auto; /* Adds scroll if content exceeds height */
+}
+
+.contact-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  color: black;
+}
+
+.contact-modal-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex-grow: 1; /* Ensures form takes available space */
+}
+
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.contact-input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+  width: 100%; /* Full width for input fields */
+}
+
+.contact-input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 200px; /* Limit textarea height for better usability */
+}
+
+.contact-error-message {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.contact-submit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: 100%; /* Full width for button */
+}
+
+.contact-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .contact-modal-container {
+    padding: 1.5rem;
+    width: 95%; /* Increase responsiveness on tablets */
+  }
+
+  .contact-modal-title {
+    font-size: 1.6rem; /* Smaller title for tablets */
+  }
+
+  .contact-input,
+  .contact-textarea,
+  .contact-submit-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-modal-container {
+    padding: 1.2rem;
+    min-height: 350px; /* Adjust height on tablets */
+  }
+
+  .contact-modal-title {
+    font-size: 1.5rem; /* Smaller title for mobile */
+  }
+
+  .contact-input,
+  .contact-textarea,
+  .contact-submit-btn {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .contact-input {
+    padding: 0.7rem;
+  }
+
+  .contact-submit-btn {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-modal-container {
+    padding: 1rem;
+    width: 90%; /* Adjust modal width on mobile */
+    min-height: 350px; /* Further reduced height */
+  }
+
+  .contact-modal-title {
+    font-size: 1.4rem; /* Further reduced title size for mobile */
+  }
+
+  .contact-input,
+  .contact-textarea,
+  .contact-submit-btn {
+    font-size: 0.85rem; /* Smaller font size for very small screens */
+  }
+
+  .contact-textarea {
+    min-height: 100px;
+    max-height: 150px; /* Reduced max-height for small screens */
+  }
+
+  .contact-submit-btn {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

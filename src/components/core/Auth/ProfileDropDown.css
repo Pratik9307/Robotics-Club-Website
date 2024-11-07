@@ -1,0 +1,95 @@
+/* ProfileDropdown Styles */
+.profile-dropdown-container {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .dropdown-icon {
+    font-size: 14px;
+    color: black;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    z-index: 1000;
+    background-color: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #E5E5E5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dropdown-icon-lg {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-image {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .dropdown-item {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .dropdown-icon-lg {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-info {
+      gap: 4px;
+    }
+  
+    .profile-image {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .dropdown-item {
+      padding: 6px 8px;
+    }
+  
+    .dropdown-icon-lg {
+      font-size: 14px;
+    }
+  }
+  

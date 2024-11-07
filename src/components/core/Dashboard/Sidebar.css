@@ -1,0 +1,124 @@
+/* Sidebar Container */
+.sidebar-container {
+  width: 250px;
+  background-color: #1e1e2f;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 1000;
+}
+
+/* Closed Sidebar (off-screen) */
+.sidebar-container.closed {
+  transform: translateX(-100%); /* Slide sidebar off-screen when closed */
+}
+
+/* Open Sidebar (fully visible) */
+.sidebar-container.open {
+  transform: translateX(0); /* Sidebar in view */
+}
+
+/* Toggle Button */
+.menu-toggle-button1 {
+  position: absolute; /* Position relative to the sidebar */
+  right: 40px; /* Position it outside the sidebar */
+  top: 20px; /* Align with the top */
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Add a slight transition */
+  z-index: 1001;
+}
+
+/* Toggle Button Hover Effect */
+.menu-toggle-button1:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Link List */
+.link-list {
+  flex-grow: 1; /* Take up available space */
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* Loading State */
+.sidebar-loading {
+  display: flex;
+  justify-content: center; /* Center loading spinner */
+  align-items: center; /* Center loading spinner vertically */
+  height: 100vh; /* Full height */
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top: 4px solid #ffffff; /* Spinner color */
+  border-radius: 50%;
+  width: 40px; /* Spinner size */
+  height: 40px; /* Spinner size */
+  animation: spin 1s linear infinite; /* Spin animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Divider */
+.divider {
+  height: 1px; /* Divider height */
+  background-color: rgba(255, 255, 255, 0.1); /* Divider color */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+/* Settings and Logout Section */
+.settings-logout {
+  display: flex; /* Flex layout for settings and logout */
+  flex-direction: column;
+}
+
+/* Logout Button */
+.logout-button {
+  display: flex; /* Flex layout for logout button */
+  align-items: center; /* Center items vertically */
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Background color on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Icon Styles */
+.icon1 {
+  font-size: 20px; /* Icon size */
+  color: black; /* Icon color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 200px; /* Smaller width for mobile */
+  }
+  
+  .link-list {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .logout-button {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

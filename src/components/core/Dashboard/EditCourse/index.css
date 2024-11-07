@@ -1,0 +1,85 @@
+/* General styling for the Edit Course component */
+.edit-course-container {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-course-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #303030; /* Adjust for visual clarity */
+    text-align: center;
+  }
+  
+  .steps-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .course-not-found {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555555; /* Text color for better readability */
+    text-align: center;
+  }
+  
+  /* Loading spinner style */
+  .loading-container {
+    display: grid;
+    place-items: center;
+    flex: 1;
+    height: 100vh;
+  }
+  
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .edit-course-title {
+      font-size: 1.75rem;
+    }
+  
+    .steps-container {
+      max-width: 90%;
+    }
+  
+    .course-not-found {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .edit-course-title {
+      font-size: 1.5rem;
+    }
+  
+    .steps-container {
+      max-width: 100%;
+    }
+  
+    .course-not-found {
+      font-size: 1.1rem;
+    }
+  }
+  

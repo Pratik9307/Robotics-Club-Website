@@ -1,0 +1,25 @@
+/* Centering content */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    height: 100vh;
+    background-color: #333; /* Optional: Add a background color for better contrast */
+  }
+  
+  /* Responsive design for tablets */
+  @media (max-width: 768px) {
+    .error-container {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 480px) {
+    .error-container {
+      font-size: 2rem;
+    }
+  }
+  

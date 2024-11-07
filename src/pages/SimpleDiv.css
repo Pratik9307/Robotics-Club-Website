@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .img-container1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .photo h2 {
+      font-size: 1em;
+    }
+  
+    .photo p {
+      font-size: 0.8em;
+    }
+  }

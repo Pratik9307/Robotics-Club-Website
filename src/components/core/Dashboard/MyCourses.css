@@ -1,0 +1,42 @@
+/* Container for MyCourses component */
+.my-courses-container {
+    padding: 20px; /* Overall padding for the container */
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title and button */
+    margin-bottom: 2rem; /* Margin below the header */
+  }
+  
+  /* Title styles */
+  .title {
+    font-size: 2rem; /* Title font size */
+    font-weight: 500; /* Medium font weight */
+    color: #f5f5f5; /* Adjust text color */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.5rem; /* Smaller font size for tablets */
+    }
+  
+    .header {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.2rem; /* Further reduced font size for mobile */
+    }
+  
+    .header {
+      align-items: center; /* Center items on very small screens */
+    }
+  }
+  

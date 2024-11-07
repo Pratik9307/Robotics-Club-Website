@@ -1,0 +1,53 @@
+/* LogoutModal.css */
+.modal-overlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark background for blur effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Blur effect */
+    z-index: 999;
+  }
+  
+  .modal-content3 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .modal-buttons3 {
+    margin-top: 20px;
+  }
+  
+  .btn3 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .btn-cancel3 {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .btn-logout3 {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .btn-cancel3:hover,
+  .btn-logout:hover {
+    opacity: 0.8;
+  }
+  

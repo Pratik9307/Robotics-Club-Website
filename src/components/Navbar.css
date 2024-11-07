@@ -1,0 +1,507 @@
+/* Reset and base styles */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed Navbar styling */
+.Navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly; /* Space between navbar items */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 1px 1px 2px rgb(219, 212, 212), 0 0 25px rgb(51, 51, 52), 0 0 5px rgb(96, 96, 98);
+  z-index: 1000;
+}
+
+/* Navbar image styling */
+.Navimg .imgt {
+  height: 90px;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+.Navimg .imgt:hover {
+  border: 1px solid white;
+}
+
+/* Navbar links and buttons styling */
+.midbar {
+  display: flex;
+  
+  gap: 35px;
+  
+  font-weight: bold;
+  margin-bottom: 10px;
+  flex: 1; /* Allow midbar to take up available space */
+  justify-content: center; /* Center items horizontally */
+   font-size:25px;
+   
+}
+
+.Click {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+.btnparent1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for better contrast */
+  border-radius: 8px;
+}
+
+
+ .btn-full2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-full1 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  backdrop-filter:blur(10px);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid transparent; /* Border color is transparent by default */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.btn-full1:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+
+}
+
+.btn-full1:active {
+  background-color: gray; /* Even darker green for active state */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+  transform: translateY(1px); /* Remove lift effect on click */
+}
+
+.btn-full1 span {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .btn-full1 {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-full1 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+.btn-full2 {
+  background-color: #dc3545; /* Red color for the Logout button */
+}
+
+.btn-full2:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .btnparent1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-full1, .btn-full2 {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+/* Responsive adjustments for button */
+.signupdiv {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+
+.btn-full {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #1d72b8, #1c92d2); /* Smooth gradient */
+  text-align: center;
+  text-decoration: none;
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions */
+  cursor: pointer; /* Indicate that the element is clickable */
+  box-shadow: 0 4px 12px rgba(252, 251, 251, 0.15); /* Enhanced shadow for depth */
+  outline: none; /* Remove default focus outline */
+  margin-left: 15px;
+}
+
+
+
+.btn-full:focus {
+  outline: 3px solid #1c92d2; /* Visible focus outline */
+  outline-offset: 2px; /* Space between outline and button */
+}
+
+.btn-full span {
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+@media (max-width: 768px) {
+  .btn-full {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-full {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar-close {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Sidebar links styling */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.sidebar-links .Click {
+  color: #333;
+}
+
+/* Button inside sidebar */
+.sidebar .btn-sidebar {
+  width: 80%; /* Make button smaller in the sidebar */
+  max-width: 200px; /* Adjust max-width for smaller button */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+  color: white;
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.sidebar .btn-sidebar:hover {
+  background: linear-gradient(135deg, rgb(19, 12, 183) 10%, rgb(82, 229, 231) 100%);
+}
+
+.sidebar .btn-sidebar svg {
+  margin-left: 8px;
+}
+
+.sidebar .btnparent{
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Navbar-wrapper {
+    justify-content: space-between;
+  }
+
+  .midbar {
+    display: none; /* Hide navbar links on small screens */
+  }
+
+  .signupdiv {
+    display: none; /* Hide the signup button on small screens */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    display: none; /* Initially hide the sidebar */
+  }
+
+  .sidebar.active {
+    display: flex; /* Show sidebar when active */
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar-wrapper {
+    padding: 5px;
+  }
+
+  .midbar {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .btn-full {
+    max-width: 250px;
+  }
+}
+
+/* General Button Styling */
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.login-btn {
+  background-color: #444;
+}
+
+.signup-btn {
+  background-color: #555;
+  margin-left: 10px;
+}
+
+/* Cart Icon Styling */
+.cart-link {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.cart-counter {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: #222;
+  color: #ffd700;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  color: #bbb;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .btnparent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cart-link {
+    margin-bottom: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btnparent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .cart-icon {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .btnparent {
+    display: flex;
+    gap: 16px;
+  }
+
+  .cart-icon {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+/* Sign Up and Log In Button Enhancements */
+
+.login-btn, .signup-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px; /* Fully rounded edges for a modern look */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transitions for hover and focus effects */
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Log In Button */
+.login-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Professional gradient */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); /* Soft shadow for depth */
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80); /* Darker gradient on hover */
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.5); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.login-btn:active {
+  background: linear-gradient(135deg, #003d80, #002a55); /* Even darker on click */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); /* Subtle shadow on click */
+  transform: translateY(0); /* Remove lift effect on click */
+}
+
+/* Sign Up Button */
+.signup-btn {
+  background: linear-gradient(135deg, #28a745, #218838); /* Professional gradient */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3); /* Soft shadow for depth */
+  margin-left: 15px; /* Maintain space between login and signup */
+}
+
+.signup-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient on hover */
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.5); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.signup-btn:active {
+  background: linear-gradient(135deg, #1e7e34, #155724); /* Even darker on click */
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2); /* Subtle shadow on click */
+  transform: translateY(0); /* Remove lift effect on click */
+}
+
+/* Button Focus State for Accessibility */
+.login-btn:focus, .signup-btn:focus {
+  outline: 2px solid rgba(0, 123, 255, 0.5); /* Visible focus outline for accessibility */
+  outline-offset: 3px; /* Space between the outline and the button */
+}
+
+

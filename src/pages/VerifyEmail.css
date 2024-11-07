@@ -1,0 +1,161 @@
+/* Main container */
+.verify-container {
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f5f5, #f0f0f0);
+  }
+  
+  /* Spinner */
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Form container */
+  .verify-form-container {
+    max-width: 450px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .verify-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .verify-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .otp-input {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .otp-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .back-link,
+  .resend-btn {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .back-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #2980b9;
+  }
+  
+  .resend-btn {
+    color: #e74c3c;
+    transition: color 0.3s ease;
+  }
+  
+  .resend-btn:hover {
+    color: #c0392b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .verify-form-container {
+      padding: 30px;
+    }
+  
+    .verify-title {
+      font-size: 1.75rem;
+    }
+  
+    .otp-input {
+      width: 45px;
+      height: 45px;
+      font-size: 1.25rem;
+    }
+  
+    .submit-btn {
+      padding: 12px;
+    }
+  
+    .back-link,
+    .resend-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

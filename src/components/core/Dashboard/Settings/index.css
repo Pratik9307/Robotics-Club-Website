@@ -1,0 +1,108 @@
+/* General Form Styling */
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Title */
+.profile-info-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Field Container */
+.profile-fields {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Field Group Styling */
+.field-group {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input and Select Styling */
+.input-style {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+.input-style:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Label Styling */
+.label-style {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #e60000;
+}
+
+.form-actions .icon-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .profile-fields {
+    flex-direction: column;
+  }
+
+  .field-group {
+    min-width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,217 @@
+
+.profile-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between items */
+  padding: 16px; /* Add some padding */
+  border: 1px solid #ccc; /* Optional border for visual clarity */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile-info-left {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.profile-img {
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  border-radius: 50%; /* Circular image */
+  margin-right: 16px; /* Space between image and text */
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column; /* Stack name and email vertically */
+}
+
+.profile-name {
+  font-size: 1.2rem; /* Larger font size */
+  font-weight: bold; /* Bold name */
+}
+
+.profile-email {
+  font-size: 0.9rem; /* Smaller font size */
+  color: #666; /* Lighter color for email */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-info-container {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align to start */
+  }
+
+  .profile-info-left {
+    margin-bottom: 10px; /* Space below profile info */
+  }
+
+  .profile-img {
+    width: 40px; /* Smaller image on mobile */
+    height: 40px; /* Smaller height */
+  }
+
+  .profile-name {
+    font-size: 1rem; /* Adjust name size */
+  }
+
+  .profile-email {
+    font-size: 0.8rem; /* Adjust email size */
+  }
+}
+
+/* Additional media queries for very small devices */
+@media (max-width: 480px) {
+  .profile-info-container {
+    padding: 12px; /* Reduced padding */
+  }
+
+  .profile-name {
+    font-size: 0.9rem; /* Further adjust size */
+  }
+
+  .profile-email {
+    font-size: 0.7rem; /* Further adjust size */
+  }
+}
+.profile-section {
+  padding: 16px; /* Add some padding */
+  border: 1px solid #ccc; /* Optional border for visual clarity */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.section-header {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between title and edit button */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 12px; /* Space below the header */
+}
+
+.about-text {
+  font-size: 1rem; /* Base font size */
+  color: #333; /* Text color */
+  line-height: 1.5; /* Improve readability */
+}
+
+.text-active {
+  opacity: 1; /* Fully visible */
+}
+
+.text-inactive {
+  color: #999; /* Lighter color for placeholder text */
+  font-style: italic; /* Italics for emphasis */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 12px; /* Reduced padding on smaller screens */
+  }
+
+  .section-header p {
+    font-size: 1.1rem; /* Slightly larger font size for header */
+  }
+
+  .about-text {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+  }
+}
+
+/* Additional media queries for very small devices */
+@media (max-width: 480px) {
+  .section-header {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  .section-header p {
+    margin-bottom: 8px; /* Space below the title */
+    font-size: 1rem; /* Adjust size */
+  }
+
+  .about-text {
+    font-size: 0.8rem; /* Further adjust size */
+  }
+}
+.profile-section {
+  padding: 16px; /* Add padding */
+  border: 1px solid #ccc; /* Optional border for visual clarity */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.section-header {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between title and edit button */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 12px; /* Space below the header */
+}
+
+.details-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between left and right detail sections */
+}
+
+.details-left, .details-right {
+  flex: 1; /* Allow both sides to take equal space */
+  margin-right: 10px; /* Space between columns */
+}
+
+.details-right {
+  margin-right: 0; /* Remove margin on the right column */
+}
+
+.detail-label {
+  font-weight: bold; /* Make labels bold */
+  margin-bottom: 4px; /* Space below labels */
+}
+
+.detail-value {
+  margin-bottom: 16px; /* Space below values */
+  color: #555; /* Text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 12px; /* Reduced padding on smaller screens */
+  }
+
+  .details-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .details-left, .details-right {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 16px; /* Space below each detail group */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header {
+    flex-direction: column; /* Stack header items on small screens */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  .section-header p {
+    margin-bottom: 8px; /* Space below the title */
+  }
+
+  .detail-label {
+    font-size: 0.9rem; /* Adjust size */
+  }
+
+  .detail-value {
+    font-size: 0.85rem; /* Adjust size */
+  }
+}
+
+
+

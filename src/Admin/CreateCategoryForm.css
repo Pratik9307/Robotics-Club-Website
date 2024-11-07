@@ -1,0 +1,47 @@
+/* components/Admin/CreateCategoryForm.css */
+
+.create-category-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .create-category-form h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .create-category-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .create-category-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-category-form input,
+  .create-category-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-category-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .create-category-form button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  

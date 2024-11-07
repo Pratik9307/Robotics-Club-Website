@@ -1,0 +1,76 @@
+/* Container for the delete account section */
+.delete-account-container {
+    margin: 20px 0; /* Margin for spacing */
+  }
+  
+  /* Content styling for the delete account section */
+  .delete-account-content {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 20px; /* Spacing between elements */
+    border: 1px solid #ff4d4d; /* Border color */
+    background-color: #ff1a1a; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Inner padding */
+  }
+  
+  /* Delete icon styling */
+  .delete-icon {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 56px; /* Fixed width */
+    height: 56px; /* Fixed height */
+    border-radius: 50%; /* Circular background */
+    background-color: #cc0000; /* Background color for the icon */
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 24px; /* Icon size */
+    color: #ffcccb; /* Icon color */
+  }
+  
+  /* Text styling for the delete account section */
+  .delete-account-text {
+    display: flex;
+    flex-direction: column; /* Stack text elements */
+    gap: 8px; /* Spacing between text elements */
+  }
+  
+  /* Title styling */
+  .delete-account-title {
+    font-size: 18px; /* Title size */
+    font-weight: 600; /* Bold text */
+    color: #f5f5f5; /* Text color */
+  }
+  
+  /* Description styling */
+  .delete-account-description {
+    width: 60%; /* Limit width for responsiveness */
+    color: #ffe6e6; /* Description text color */
+  }
+  
+  /* Button styling */
+  .delete-button {
+    width: fit-content; /* Button size adjusts to content */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-style: italic; /* Italic text */
+    color: #ff9999; /* Button text color */
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0; /* No padding */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .delete-account-content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align to the left */
+    }
+  
+    .delete-account-description {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  

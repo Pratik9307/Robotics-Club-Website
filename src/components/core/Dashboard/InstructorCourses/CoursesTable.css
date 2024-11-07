@@ -1,0 +1,149 @@
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table-header-row {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  .header-cell {
+    padding: 12px 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #444;
+  }
+  
+  .course-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .course-thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .course-details {
+    margin-left: 20px;
+  }
+  
+  .course-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .course-description {
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+  
+  .course-date {
+    font-size: 12px;
+    color: #888888;
+  }
+  
+  .status-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .draft {
+    background-color: #ff5555;
+    color: #fff;
+  }
+  
+  .published {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    font-size: 14px;
+    color: #f5f5f5;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .action-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .edit-button:hover {
+    color: #4caf50;
+  }
+  
+  .delete-button:hover {
+    color: #ff5555;
+  }
+  
+  .no-courses-text {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #f5f5f5;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .course-info {
+      flex-direction: column;
+    }
+  
+    .course-thumbnail {
+      width: 100%;
+      height: auto;
+    }
+  
+    .table-cell {
+      font-size: 12px;
+    }
+  
+    .actions {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-name {
+      font-size: 14px;
+    }
+  
+    .table-cell {
+      padding: 5px;
+    }
+  
+    .action-button {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+/* General form container styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label and Input Styles */
+  .form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input-field1 {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .input-field1:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.2);
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  /* Password toggle styling */
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .password-toggle:hover {
+    color: #0073e6;
+  }
+  
+  /* Forgot password link */
+  .forgot-password-link {
+    color: #0073e6;
+    font-size: 0.875rem;
+    text-align: right;
+    margin-top: 0.5rem;
+    transition: color 0.2s;
+  }
+  
+  .forgot-password-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    padding: 0.75rem;
+    border-radius: 6px;
+    background-color: #0073e6;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 12px rgba(0, 91, 181, 0.2);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .login-form {
+      padding: 1.5rem;
+      max-width: 100%;
+    }
+  }
+  
